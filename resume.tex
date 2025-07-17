@@ -1,0 +1,184 @@
+%-------------------------
+% Resume in Latex
+% Author : Lloyd Mason
+% Based off of: https://github.com/lloydmason/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[sfdefault]{carlito}
+
+% \usepackage[T1]{fontenc}
+% \usepackage{fix-cm}
+
+\usepackage[sfdefault,lf]{carlito}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \texttt{Lloyd Mason}} \\ \vspace{1pt}
+    \small +45 41663369 $|$ \href{mailto:lloyd1@live.dk}{\underline{lloyd1@live.dk}} $|$ 
+    \href{https://linkedin.coProven track m/in/lloyd-mason}{\underline{linkedin.com/in/lloyd-mason}} $|$
+    \href{https://github.com/lloydmason95}{\underline{github.com/lloydmason95}}
+\end{center}
+
+%-----------EDUCATION-  ----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Aarhus University}{Aarhus, DK}
+      {Master of Science in Business Intelligence (MSc)}{Aug 2018 -- May 2020}
+    \resumeSubheading
+      {Aarhus University}{Aarhus, DK}
+      {Bachelor in Business Administration (HA Almen, BSc)}{Aug 2015 -- May 2018}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Platform Engineer, Freelance}{Aug 2022 -- Present }
+      {Banking Circle, FinTech}{Copenhagen, DK}
+      \resumeItemListStart
+        \resumeItem{Designed and implemented a cloud platform powering an event-driven, service-oriented architecture utilizing Azure Service Bus and Event Hubs, with workloads distributed across Kubernetes, App Services, and Virtual Machines.}
+        \resumeItem{Implemented and tested high availability and failover mechanisms across critical Azure services—including workloads on AKS, App Services, and VMs running in active/active across regions, as well as SQL Servers, Storage Accounts, Key Vaults, and Azure Service Bus—utilizing geo-replication and zone redundancy to ensure business continuity and increase performance.}
+        \resumeItem{Streamlined code delivery of .NET applications by building CI/CD pipelines that automated testing, coverage validation, and rapid builds, while enabling reliable infrastructure releases through IaC and other scripting.}
+        \resumeItem{Designed and implemented a network architecture aligned with business-critical application flows, using Azure VNets, Subnets, NSGs, and Private Endpoints to enhance security for the banks mission-critical components.}
+        \resumeItem{Built a IaC solution delivering infrastructure across 20+ repositories to support microservices, enhancing transparency, developer productivity, and codebase consistency.}
+        \resumeItem{Acted as a central enabler between teams supporting platform infrastructure, Kubernetes operations, cloud governance, and stakeholder alignment across the platform landscape.}        
+        \resumeItem{Collaborated with the CCoE to deliver a suite of standardized, test-driven Terraform modules, enabling self-service infrastructure provisioning for development teams.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cloud Solution Architect, Freelance}{Aug 2024 -- Present}
+      {Mindcore}{Copenhagen, DK}
+      \resumeItemListStart
+        \resumeItem{Advisory on and implementation of Azure Landing Zones based on Enterprise-Scale architecture and CAF principles, tailored on the customers cloud maturity focusing on workloads, identity, security, and governance.}
+        \resumeItem{Implemented containerization using Docker and Kubernetes to modernize legacy applications, streamline deployment, and improve scalability and resource efficiency.}
+        \resumeItem{Conducted cost analysis and optimization in Azure, focusing on reservation strategies, workload rightsizing, and improving overall cost efficiency.}
+        \resumeItem{Developed strategic cloud transformation roadmaps covering migration, modernization, and platform alignment.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Engineer, Cloud Engineer, Full-time}{Oct 2020 -- Jul 2022}
+      {Inspari}{Copenhagen, DK}
+      \resumeItemListStart
+        \resumeItem{Delivered end-to-end data platform solutions for SMBs and enterprise clients, leveraging Azure Databricks, Data Factory, and Synapse Analytics to streamline data integration and model ETL workflows.}
+        \resumeItem{Conducted hypercare activities, including monitoring data volume, job executions, sql query performance, and system cleanup to ensure platform stability and performance.}
+        \resumeItem{Recognized as Employee of the Year by management, leadership, and peers for outstanding contributions and team collaboration.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Certifications}{: Azure Solutions Architect Expert, Azure Administrator (AZ-104), Designing MS Azure Infrastructure Solutions (AZ-305), and Azure Administrator Associate.\\
+        \textbf{Languages}{: Python, SQL, R, HCL (Terraform), YAML, JSON, Bicep, PowerShell, Bash} \\
+        \textbf{Frameworks}{: .NET, Java} \\
+        \textbf{Developer Tools}{: Git, Docker, Kubernetes, Helm, Terraform, Linux} \\
+        \textbf{CI/CD}{: ArgoCD, Azure DevOps, GitHub Actions} \\
+        \textbf{Clouds}{: Microsoft Azure, Amazon Web Services (AWS)} \\
+        \textbf{Soft Skills}{: Clear Communication, cross-team collaboration, analytical problem solving, strategic thinking, Adaptability}}}}        
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
