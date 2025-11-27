@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Lloyd Mason
+% Based off of: https://github.com/lloydmason/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% \usepackage[sfdefault]{carlito}
+
+% \usepackage[T1]{fontenc}
+% \usepackage{fix-cm}
+
+\usepackage[sfdefault,lf]{carlito}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \texttt{Lloyd Mason}} \\ \vspace{1pt}
+    \small +45 41663369 $|$ \href{mailto:lloyd1@live.dk}{\underline{lloyd1@live.dk}} $|$ 
+    \href{https://linkedin.com/in/lloyd-mason}{\underline{linkedin.com/in/lloyd-mason}} $|$
+    \href{https://github.com/lloydmason95}{\underline{github.com/lloydmason95}}
+\end{center}
+
+\vspace{5pt}
+\begin{center}
+    \small \textit{Jeg fokuserer på at bygge skalerbare cloud-platforme, implementere DevOps-praksisser og forbedre Developer Experience gennem automatisering og selvbetjening. Kåret og anerkendt som Årets Medarbejder for forretningsmæssig indflydelse og tværgående samarbejde.}
+\end{center}
+\vspace{5pt}
+
+%-----------EDUCATION-----------
+\section{Uddannelse}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Aarhus Universitet}{Aarhus, DK}
+      {Kandidat i Business Intelligence (cand.merc.)}{Aug 2018 -- Maj 2020}
+    \resumeSubheading
+      {Aarhus Universitet}{Aarhus, DK}
+      {Bachelor i Erhvervsøkonomi (HA Almen)}{Aug 2015 -- Maj 2018}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Erfaring}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {DevOps Engineer, Freelance Konsulent}{Aug 2022 -- Nu}
+      {Banking Circle, FinTech}{København, DK}
+      \resumeItemListStart
+        \resumeItem{Arkitekterede og leverede en cloud-native platform, der understøtter et event-drevet microservices-økosystem med Azure Service Bus og Event Hubs, samtidig med deployment af robuste workloads på tværs af Kubernetes, App Services og Virtual Machines for at optimere skalerbarhed, ydeevne og serviceisolering.}
+        \resumeItem{Implementerede og testede disaster recovery- og active/active failover-strategier på tværs af Kubernetes, App Services og VM'er i multi-region Azure-platform. Leverede geo-redundant arkitektur for data- og messaging-lag, herunder Azure SQL Databases, Storage, Key Vault og Service Bus, for at sikre høj tilgængelighed og ydeevnekontinuitet for missionskritiske finansielle workloads.}
+        \resumeItem{Strømlinede kodelevering af .NET-applikationer ved at bygge CI/CD-pipelines, der automatiserede test, coverage-validering og hurtige builds, samtidig med at pålidelige infrastruktur-releases blev muliggjort gennem IaC og anden scripting.}
+        \resumeItem{Designede og implementerede sikker netværksarkitektur for et missionskritisk banksystem ved brug af Azure VNets, Subnets, NSG'er og Private Endpoints — reducerede angrebsfladen og tilpassede trafikflows til compliance- og sikkerhedskrav.}
+        \resumeItem{Designede og vedligeholdt et genanvendeligt IaC-framework, der driver infrastruktur på tværs af 20+ repositories, hvilket forbedrede microservice-levering, udviklerproduktivitet og platformkonsistens.}
+        \resumeItem{Samarbejdede med Cloud Center of Excellence (CCoE) om at bygge standardiserede, testdrevne Terraform-moduler, der muliggør selvbetjenings-infrastrukturprovisionering og accelererer onboarding af udviklere.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cloud Solution Architect, Freelance}{Aug 2024 -- Nu}
+      {Mindcore}{København, DK}
+      \resumeItemListStart
+        \resumeItem{Rådgivning om og implementering af Azure Landing Zones baseret på Enterprise-Scale-arkitektur, twelve-factor app og CAF-principper, tilpasset kundens cloud-modenhed med fokus på workloads, identitet, sikkerhed og governance.}
+        \resumeItem{Implementerede containerisering med Docker og Kubernetes for at modernisere legacy-applikationer, strømline deployment og forbedre skalerbarhed og ressourceeffektivitet.}
+        \resumeItem{Udførte omkostningsanalyse og -optimering i Azure med fokus på reservationsstrategier, workload-rightsizing og forbedring af den overordnede omkostningseffektivitet.}
+        \resumeItem{Udviklede strategiske cloud-transformations-roadmaps, der dækker migrering, modernisering og platformtilpasning.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Engineer, Cloud Engineer, Fuldtid}{Okt 2020 -- Jul 2022}
+      {Inspari}{København, DK}
+      \resumeItemListStart
+        \resumeItem{Leverede end-to-end dataplatformsløsninger til SMV'er og enterprise-kunder ved brug af Azure Databricks, Data Factory og Synapse Analytics til at strømline dataintegration og modellere ETL-workflows.}
+        \resumeItem{Udførte hypercare-aktiviteter, herunder overvågning af datamængder, job-eksekvering, SQL-forespørgselsydeevne og systemoprydning for at sikre platformstabilitet og ydeevne.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Tekniske Kompetencer}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Certificeringer}{: Azure Solutions Architect Expert, Azure Administrator (AZ-104), Designing MS Azure Infrastructure Solutions (AZ-305) og Azure Administrator Associate.}\\
+        \textbf{Sprog}{: Python, SQL, R, HCL (Terraform), YAML, JSON, Bicep, PowerShell, Bash} \\
+        \textbf{Frameworks}{: .NET, Java} \\
+        \textbf{Udviklerværktøjer}{: Git, Docker, Kubernetes, Helm, Terraform, Linux} \\
+        \textbf{CI/CD}{: ArgoCD, Azure DevOps, GitHub Actions} \\
+        \textbf{Cloud}{: Microsoft Azure, Amazon Web Services (AWS)} \\  
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
